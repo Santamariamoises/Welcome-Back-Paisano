@@ -34,7 +34,17 @@ INSERT INTO teamMembers (photo, name, about) VALUES ("IkMy1NN", "Moises Santamar
 INSERT INTO teamMembers (photo, name, about) VALUES ("tY9vzt1", "Fernando Figueroa", "As an immigrant myself; I understand the struggles, I am here to help");
 INSERT INTO teamMembers (photo, name, about) VALUES ("4kErWao", "Brian Ramirez", "Born in Mexico City grew up in Atlanta GA Hola-code engineer glad to help");
 
+CREATE TABLE chatBoxData (
+  id int  NOT NULL AUTO_INCREMENT,
+  name varchar(20) NOT NULL,
+  gender varchar(10) NOT NULL,
+  lived varchar(20) NOT NULL,
+  currlocation varchar(20) NOT NULL,
+  age int NOT NULL,
+  PRIMARY KEY(ID)
+);
 
+INSERT INTO chatBoxData (name, gender, lived, currlocation, age) VALUES ("Fernando", "Male", "Michigan", "CDMX", 40 )
 
 
 /*  Execute this file from the command line by typing:
