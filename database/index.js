@@ -19,7 +19,7 @@ var displayResources = function(callback, logo, name, description, url) {
     if (err) {
       callback(err, null);
     } else {
-    
+
       callback(null, results)
     }
   });
@@ -37,6 +37,21 @@ var displayTeamMembers = function(callback, photo, name, about) {
     }
   });
 };
+
+var insertInfo = function(callback, name, gender, live, currlocation, age) {
+connection.query("INSERT INTO chatBoxData (name, gender, live, currlocation, age) VALUES (?, ?, ?, ?, ?)",
+[name, gender, live, currlocation, age], (err, results, fields) => {
+  if(err) {
+    callback(err, null);
+  }else{
+    console.log(results);
+    callback(null, results);
+    }
+  });
+};
+
+
 module.exports.selectAll = selectAll;
 module.exports.displayResources = displayResources;
 module.exports.displayTeamMembers = displayTeamMembers;
+module.exports.insertInfo = insertInfo;
