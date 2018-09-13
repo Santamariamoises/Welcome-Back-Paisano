@@ -12,15 +12,36 @@ class Review extends Component {
       name: '',
       gender: '',
       lived: '',
+      currlocation: '',
       age: ''
     };
+    this.sendInfo = this.sendInfo.bind(this);
   }
+//create a post request using axios and elements from the state
+sendInfo() {
+  const {name, gender, live, currlocation, age} = this.state;
+  axios.post('/LearnMore', {
+    name,
+    gender,
+    live,
+    currlocation,
+    age
+  })
+  .then(res => (res))
+  .catch(err => (err){
+    console.log(err);
+  })
+}
 
   componentWillMount() {
     const {steps} = this.props;
     const {name, gender, live, currlocation, age} = steps;
 
     this.setState({name, gender, live, currlocation, age});
+  }
+  //invoke the function after the information has been rendered; 
+  componentWillUnmount() {
+    this.sendInfo();
   }
 
   render() {
