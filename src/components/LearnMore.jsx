@@ -2,6 +2,7 @@ import {Link} from 'react-router-dom';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import ChatBot from 'react-simple-chatbot';
+import axios from 'axios';
 import './LearnMore.css'
 
 class Review extends Component {
@@ -20,16 +21,16 @@ class Review extends Component {
 //create a post request using axios and elements from the state
 sendInfo() {
   const {name, gender, live, currlocation, age} = this.state;
-  axios.post('/LearnMore', {
+  axios.post('/learnMore', {
     name,
     gender,
     live,
     currlocation,
     age
   })
-  .then(res => (res))
-  .catch(err => (err){
-    console.log(err);
+  .then(res => console.log(res))
+  .catch(err => {
+    console.log(err)
   })
 }
 
@@ -39,7 +40,7 @@ sendInfo() {
 
     this.setState({name, gender, live, currlocation, age});
   }
-  //invoke the function after the information has been rendered; 
+  //invoke the function after the information has been rendered;
   componentWillUnmount() {
     this.sendInfo();
   }
