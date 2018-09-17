@@ -10,13 +10,14 @@ import Navbar from './components/CustomNavbar';
 import Footer from './components/Footer';
 
 class App extends React.Component {
-  
+
   render() {
-    return (<Router>
+    return (
+    <Router>
       <div>
         <Navbar/>
         <Route exact="exact" path="/" component={Home}/>
-        <Route path="/about" component={About}/>                         
+        <Route path="/about" component={About}/>
         <Route path="/news" component={News}/>
         <Route path="/resources" component={Resources}/>
         <Route path="/learnMore" component={LearnMore}/>

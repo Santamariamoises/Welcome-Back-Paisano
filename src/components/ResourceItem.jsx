@@ -1,7 +1,9 @@
 import React from "react";
 import {Grid, Row, Col, Image} from "react-bootstrap";
 import './Resources.css';
-const ResourceItem = props => (<Grid>
+
+const ResourceItem = props => (
+  <Grid>
   <Row>
     <Col xs={12} sm={7} className="sidebar-section">
       <Image src={`https://i.imgur.com/${props.resource.logo}.jpg`} rounded="rounded"/>
