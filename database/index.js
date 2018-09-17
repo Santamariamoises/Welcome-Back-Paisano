@@ -1,11 +1,5 @@
 var mysql = require("mysql");
-
-var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "password",
-  database: "sources"
-});
+var connection = mysql.createConnection({host: 'localhost', user: 'root', password: 'holacode', database: 'sources'});
 
 var selectAll = function(callback) {
   connection.query("SELECT * FROM sources", function(err, results, fields) {

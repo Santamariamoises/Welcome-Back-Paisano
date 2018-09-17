@@ -4,6 +4,7 @@ var database = require("../database/index.js");
 var cors = require("cors");
 var app = express();
 
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(__dirname + "/../public"));

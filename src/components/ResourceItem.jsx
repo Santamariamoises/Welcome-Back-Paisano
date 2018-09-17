@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Row, Col, Image } from "react-bootstrap";
 import "./Resources.css";
+
 const ResourceItem = props => (
   <Grid>
     <Row>
