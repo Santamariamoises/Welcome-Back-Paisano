@@ -1,15 +1,13 @@
-h4
-{
- color: white;
+h4 {
+	color: white;
 }
 .footer-2 {
-  background-color:
+	background-color: ;
 }
-.footerText{
-  color: black;
+.footerText {
+	color: black;
 }
-.page-footer{
-  margin: 40px auto 0
-auto;
-  padding: 30px;
+.page-footer {
+	margin: 40px auto 0 auto;
+	padding: 30px;
 }

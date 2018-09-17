@@ -1,27 +1,25 @@
 .jumbotron {
-  margin-bottom: 4em;
+	margin-bottom: 4em;
 }
 .person-wrapper {
-  width: 900px;
- margin: 30px auto 0 auto;
+	width: 900px;
+	margin: 30px auto 0 auto;
 
- padding: 20px;
- border-radius: 100px;
-
+	padding: 20px;
+	border-radius: 100px;
 }
 
 .profile-pic {
-  width: 50%;
+	width: 50%;
 }
 
 .btn-primary {
-  background-image: none;
-  border: none;
-  border-radius: 0;
-  background-color: #2892D7;
+	background-image: none;
+	border: none;
+	border-radius: 0;
+	background-color: #2892d7;
 }
 
-.teamDescription{
-  color: black;
-
+.teamDescription {
+	color: black;
 }

@@ -44,7 +44,7 @@ CREATE TABLE chatBoxData (
   PRIMARY KEY(ID)
 );
 
-INSERT INTO chatBoxData (name, gender, lived, currlocation, age) VALUES ("Fernando", "Male", "Michigan", "CDMX", 40 )
+INSERT INTO chatBoxData (name, gender, lived, currlocation, age) VALUES ("Fernando", "Male", "Michigan", "CDMX", 40);
 
 
 /*  Execute this file from the command line by typing:
