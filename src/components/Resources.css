@@ -1,11 +1,10 @@
-
 .background {
-    background-color: lightblue;
+	background-color: lightblue;
 }
-.resourcesDescription{
-  color: black;
+.resourcesDescription {
+	color: black;
 }
-.sidebar-section{
-  padding-top: 50px;
-  padding-bottom: 80px;
+.sidebar-section {
+	padding-top: 50px;
+	padding-bottom: 80px;
 }
